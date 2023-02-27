@@ -6,14 +6,13 @@
     "keywords": [
         "enum",
         "enum-normalizer",
-        "symfony",
-        "symfony4"
+        "symfony"
     ],
     "license": "MIT",
     "authors": [
         {
             "name": "RJ Garcia",
-            "email": "rj@bighead.net"
+            "email": "ragboyjr@icloud.com"
         }
     ],
     "autoload": {
@@ -21,11 +20,18 @@
             "Krak\\EnumNormalizer\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Krak\\EnumNormalizer\\": "tests"
+        }
+    },
     "require": {
-        "symfony/serializer": "^3.4|^4.1"
+        "symfony/serializer": "^4.4|^5.4|^6.0"
     },
     "require-dev": {
-        "symfony/dependency-injection": "^4.0",
-        "symfony/http-kernel": "^4.0"
+        "phpunit/phpunit": "^10"
+    },
+    "scripts": {
+        "test": "phpunit --testdox --colors tests"
     }
 }
